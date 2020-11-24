@@ -1,14 +1,15 @@
 var today= new Date();
 var hourNow = today.getHours();
 var greeting;
+let confirmation;
 
 let firstname = prompt("first name?");
-let confirmation = confirm("Are you sure your name is "+firstname+"?")
+confirm("Are you sure your name is "+firstname+"?")
 
 if (hourNow > 18 && confirmation == true) {
 greeting= 'Good evening! ' +firstname;
 }
-else if (hourNow > 18 && confirmation !== true) {
+else if (hourNow > 18 && confirmation != true) {
 greeting= 'Hello Human!'
 }
 else if (hourNow > 12) {
